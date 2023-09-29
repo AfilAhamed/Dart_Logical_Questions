@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main() {
+  //divisors
   stdout.write('enter a number');
   int input = int.parse(stdin.readLineSync()!);
 
