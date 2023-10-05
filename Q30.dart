@@ -1,4 +1,5 @@
 void main() {
+  //palindrome with for loop
   String palindrome = 'malayalam';
 
   List<String> a = [];
@@ -7,9 +8,10 @@ void main() {
     a.add(palindrome[i]);
   }
 
-  if (palindrome == a.join()) {
-    print('yes');
-  } else {
-    print('no');
-  }
+  palindrome == a.join() ? print('yes') : print('no');
+  // if (palindrome == a.join()) {
+  //   print('yes');
+  // } else {
+  //   print('no');
+  // }
 }
