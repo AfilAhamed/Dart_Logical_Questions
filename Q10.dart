@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  stdout.write('enter a number to check prime number or not');
+  stdout.write('enter a number to check prime number ');
   int input = int.parse(stdin.readLineSync()!);
 
   int flag = 0;
@@ -12,9 +12,11 @@ void main() {
       break;
     }
   }
-  if (flag == 0) {
-    print('$input prime number');
-  } else {
-    print('$input not a prime number');
-  }
+
+  flag == 0 ? print('$input prime number') : print('$input not a prime number');
+  // if (flag == 0) {
+  //   print('$input prime number');
+  // } else {
+  //   print('$input not a prime number');
+  // }
 }

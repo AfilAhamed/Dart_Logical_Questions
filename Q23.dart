@@ -5,7 +5,7 @@ void main() {
   var file = File('text.txt');
 
   List<String> txt = file.readAsLinesSync();
-  String random = txt[Random().nextInt(txt.length)];
+  String random = txt[Random().nextInt(max(100000, txt.length))];
 
   print(random);
 }
